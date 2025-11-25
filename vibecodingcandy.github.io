@@ -1,52 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Travel · Design · Crafts — small business portfolio" />
-  <title>Travel · Design · Crafts — Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Candy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-  <!-- Palette + modern, clean styles -->
-  <style>
-    :root{
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --text: #0f1724;
-      --muted: #6b7280;
-      --primary: #2563eb;   /* vivid blue */
-      --accent: #06b6d4;    /* teal accent */
-      --radius: 14px;
-      --maxw: 1100px;
-      --glass: rgba(255,255,255,0.6);
-    }
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">Vibe Candy</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    /* Reset-ish */
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:linear-gradient(180deg, var(--bg), #eef3f8 60%);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-    }
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Design • Travel • Handmade Crafts</h1>
+        <p>Creative projects inspired by movement, color, and exploration.</p>
+    </section>
 
-    .container{
-      max-width:var(--maxw);
-      margin:36px auto;
-      padding:28px;
-    }
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>
+            Hi! I'm a designer and craft enthusiast who loves exploring the world 
+            and turning inspiration into unique handmade projects. My work blends 
+            clean modern style with playful colors and textures.
+        </p>
+    </section>
 
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      margin-bottom:28px;
-    }
-    .brand{
-      display:flex;
-      gap:16px;
-      align-items:center;
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Travel Journals</h3>
+                <p>Hand-designed journals capturing trips and landscapes.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Decor Pieces</h3>
+                <p>Minimalist wall art, patterns, and geometric compositions.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Craft Workshops</h3>
+                <p>Small-group creative workshops and DIY sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <p>Add your project photos in the /images folder and update the img tags here.</p>
+
+        <div class="gallery-grid">
+            <img src="images/sample1.jpg" alt="Sample 1">
+            <img src="images/sample2.jpg" alt="Sample 2">
+            <img src="images/sample3.jpg" alt="Sample 3">
+            <img src="images/sample4.jpg" alt="Sample 4">
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+
+        <form action="https://formsubmit.co/your-email-here" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p class="email-hint">(* Replace email in the form with your wife's address.)</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Vibe Candy — All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
